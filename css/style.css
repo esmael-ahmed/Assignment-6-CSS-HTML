@@ -1,0 +1,686 @@
+:root {
+    --main-color: #0078FF;
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+/*start header*/
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../iamges/header/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.header .header-title h1 {
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+.header .header-title p {
+    font-size: 2.5rem;
+    font-weight: 600
+}
+
+/*end header*/
+/*////////////////////////////////////////////////////////////*/
+
+/*start nav*/
+.bg-body-tertiary {
+    background: rgba(0, 0, 0, 0.9) !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link,
+.navbar-brand,
+.navbar-brand:focus,
+.navbar-brand:hover {
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 1.75rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    letter-spacing: 0.4px;
+    font-weight: 600;
+    padding: 15px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    position: relative;
+}
+
+.nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 14px;
+    bottom: 6px;
+    height: 3px;
+    width: 50%;
+    background-color: white;
+    transition:all 0.3s;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    left: 14px;
+    bottom: 6px;
+    height: 3px;
+    width: 0;
+    background-color: white;
+    transition:all 0.3s;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover::before {
+    width: 50%;
+}
+
+
+
+/*end nav*/
+
+
+/*start about*/
+.about ul span {
+    font-size: 1.1rem;
+}
+
+.about h5 {
+    position: relative;
+}
+
+.about h5::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 3px;
+    width: 100px;
+    background-color: var(--main-color);
+}
+
+.about .progress {
+    height: 12px;
+}
+
+/*end about*/
+/*////////////////////////////////////////////////////////////*/
+
+
+/*start services*/
+.repeat-title h3 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.repeat-title {
+    position: relative;
+}
+
+.repeat-title::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    bottom: -20px;
+    left: 50%;
+    background-color: var(--main-color);
+    transform: translateX(-50%);
+}
+
+.services .services-icon {
+    width: 120px;
+    height: 120px;
+    border-width: 10px !important;
+    border-color: var(--main-color) !important;
+    transition: all 0.5s;
+}
+
+.services-item:hover .services-icon {
+    background-color: var(--main-color);
+    border-color: #CDE1F8 !important;
+}
+
+.services-icon svg {
+    transition: all 0.5s;
+}
+
+.services-item:hover .services-icon svg {
+    color: white;
+}
+
+.services-item h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+/*end services*/
+/*////////////////////////////////////////////////////////////*/
+
+
+/*start statistics*/
+.statistics {
+    height: 430px;
+    background-image: linear-gradient(rgba(0, 120, 255, 0.7), rgba(0, 120, 255, 0.7)), url(../iamges/static/counters-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.statistics .icon {
+    width: 90px;
+    height: 90px;
+    border-width: 10px !important;
+    border-color: #CDE1F8 !important;
+}
+
+.statistics .icon svg {
+    color: white;
+}
+
+/*end statistics*/
+/*////////////////////////////////////////////////////////////*/
+
+
+
+/*start protfolio*/
+.card h2 {
+    font-size: 1.2rem !important;
+    font-weight: 500 !important;
+}
+
+.card h2 span {
+    font-size: 0.8rem !important;
+}
+
+.protfolio .card {
+    border: none;
+    /* overflow: hidden; */
+}
+
+.protfolio .card .image {
+    overflow: hidden;
+}
+
+.protfolio .card img {
+    transition: all 0.7s;
+}
+
+.protfolio .card img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.protfolio .icon {
+    width: 45px;
+    height: 45px;
+    border-width: 3px !important;
+    border-color: var(--main-color) !important;
+}
+
+.protfolio .icon svg {
+    color: var(--main-color);
+}
+
+/*end protfolio*/
+/*////////////////////////////////////////////////////////////*/
+
+
+
+/*start feedback*/
+.feedback {
+    background-image: linear-gradient(rgba(0, 120, 255, 0.6), rgba(0, 120, 255, 0.7)), url(../iamges/feedback/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.feedback img {
+    width: 150px;
+}
+
+.feedback span {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.feedback p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.feedback .carousel-indicators {
+    position: static;
+}
+
+.carousel-indicators [data-bs-target] {
+
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+/*end feedback*/
+/*////////////////////////////////////////////////////////////*/
+
+
+/*start blog*/
+.card-foooter-left img {
+    width: 35px !important;
+}
+
+.blog .card-title a, .blog .card-foooter-left a {
+    text-decoration: none !important;
+    color: #212529;
+    transition: all 0.7s;
+}
+
+.blog .card-title a:hover {
+    color: #0078FF;
+}
+
+.blog .card-foooter-left a:hover {
+    color: #0078FF;
+}
+/*end blog*/
+/*////////////////////////////////////////////////////////////*/
+
+/*start contact*/
+
+.contact h5 {
+    position: relative;
+}
+
+.contact h5::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 3px;
+    width: 100px;
+    background-color: var(--main-color);
+}
+.contact p {
+    font-size: 1.25rem !important;
+}
+
+.contact-media-linke {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+
+}
+
+.contact-media-linke:hover {
+    background-color: #0078FF;
+    border-color: #CDE1F8 !important;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.contact-link {
+    transition: all 0.4s;
+}
+
+.contact-media-linke:hover .contact-link {
+    color: white;
+}
+
+.contact {
+    background-image: linear-gradient(rgba(0, 120, 255, 0.6), rgba(0, 120, 255, 0.7)), url(../iamges/feedback/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 130px !important;
+}
+/*end contact*/
+/*////////////////////////////////////////////////////////////*/
+
+
+/*start footer*/
+footer {
+    height: 100px !important;
+    color:  white !important;
+    background-color: #0062D3;
+}
+
+footer a {
+    text-decoration: none;
+    color:  white !important;
+}
+
+
+/*end footer*/
+/*////////////////////////////////////////////////////////////*/
+
+
+
+.back-to-top {
+    position: fixed;
+    visibility: visible;
+    opacity: 1;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #0078ff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
+}
+
+.back-to-top svg {
+    color: white;
+}
+
+
+
+@keyframes change-text {
+    1% {
+        content: ' |';
+    }
+    2% {
+        content: 'd |';
+    }
+    3% {
+        content: 'de |';
+    }
+    4% {
+        content: 'dev |';
+    }
+    5% {
+        content: 'deve |';
+    }
+    6% {
+        content: 'devel |';
+    }
+    7% {
+        content: 'develo |';
+    }
+    8% {
+        content: 'develop |';
+    }
+    9% {
+        content: 'develope |';
+    }
+    10% {
+        content: 'developer |';
+    }
+    11% {
+        content: 'developer |';
+    }
+    12% {
+        content: 'developer |';
+    }
+    13% {
+        content: 'developer |';
+    }
+    14% {
+        content: 'developer |';
+    }
+    15% {
+        content: 'developer |';
+    }
+    16% {
+        content: 'developer |';
+    }
+    17% {
+        content: 'developer |';
+    }
+    18% {
+        content: 'develope |';
+    }
+    19% {
+        content: 'develop |';
+    }
+    20% {
+        content: 'develo |';
+    }
+    21% {
+        content: 'devel |';
+    }
+    22% {
+        content: 'deve |';
+    }
+    23% {
+        content: 'dev |';
+    }
+    24% {
+        content: 'de |';
+    }
+    25% {
+        content: 'des |';
+    }
+    26% {
+        content: 'desi |';
+    }
+    27% {
+        content: 'desig |';
+    }
+    28% {
+        content: 'design |';
+    }
+    29% {
+        content: 'designe |';
+    }
+    30% {
+        content: 'designer |';
+    }
+    31% {
+        content: 'designer |';
+    }
+    32% {
+        content: 'designer |';
+    }
+    33% {
+        content: 'designer |';
+    }
+    34% {
+        content: 'designer |';
+    }
+    35% {
+        content: 'designer |';
+    }
+    36% {
+        content: 'designer  |';
+    }
+    37% {
+        content: 'designe |';
+    }
+    38% {
+        content: 'design |';
+    }
+    39% {
+        content: 'desig |';
+    }
+    40% {
+        content: 'desi |';
+    }
+    41% {
+        content: 'des |';
+    }
+    42% {
+        content: 'de |';
+    }
+    43% {
+        content: 'd |';
+    }
+    44% {
+        content: 'f |';
+    }
+    45% {
+        content: 'fr |';
+    }
+    46% {
+        content: 'fre |';
+    }
+    47% {
+        content: 'free |';
+    }
+    48% {
+        content: 'freel |';
+    }
+    49% {
+        content: 'freela |';
+    }
+    50% {
+        content: 'freelan  |';
+    }
+    51% {
+        content: 'freelanc |';
+    }
+    52% {
+        content: 'freelance |';
+    }
+    53% {
+        content: 'freelancer |';
+    }
+    54% {
+        content: 'freelancer |';
+    }
+    55% {
+        content: 'freelancer |';
+    }
+    56% {
+        content: 'freelancer |';
+    }
+    57% {
+        content: 'freelancer |';
+    }
+    58% {
+        content: 'freelancer |';
+    }
+    59% {
+        content: 'freelancer |';
+    }
+    60% {
+        content: 'freelance |';
+    }
+    61% {
+        content: 'freelanc |';
+    }
+    62% {
+        content: 'freelan |';
+    }
+    63% {
+        content: 'freela |';
+    }
+    64% {
+        content: 'freel |';
+    }
+    65% {
+        content: 'free |';
+    }
+    66% {
+        content: 'fre |';
+    }
+    67% {
+        content: 'fr |';
+    }
+    68% {
+        content: 'f |';
+    }
+    69% {
+        content: 'p |';
+    }
+    70% {
+        content: 'ph |';
+    }
+    71% {
+        content: 'pho |';
+    }
+    72% {
+        content: 'phot |';
+    }
+    73% {
+        content: 'photo |';
+    }
+    74% {
+        content: 'photog |';
+    }
+    75% {
+        content: 'photogr |';
+    }
+    76% {
+        content: 'photogra |';
+    }
+    77% {
+        content: 'photograp |';
+    }
+    78% {
+        content: 'photograph |';
+    }
+    79% {
+        content: 'photographe |';
+    }
+    80% {
+        content: 'photographer |';
+    }
+    81% {
+        content: 'photographer |';
+    }
+    82% {
+        content: 'photographer |';
+    }
+    83% {
+        content: 'photographer |';
+    }
+    84% {
+        content: 'photographer |';
+    }
+    85% {
+        content: 'photographer |';
+    }
+    86% {
+        content: 'photographer |';
+    }
+    87% {
+        content: 'photographer |';
+    }
+    90% {
+        content: 'photographer |';
+    }
+    91% {
+        content: 'photographe |';
+    }
+    92% {
+        content: 'photograph |';
+    }
+    93% {
+        content: 'photograp |';
+    }
+    94% {
+        content: 'photogra |';
+    }
+    95% {
+        content: 'photogr |';
+    }
+    96% {
+        content: 'photog |';
+    }
+    97% {
+        content: 'photo |';
+    }
+    98% {
+        content: 'pho |';
+    }
+    99% {
+        content: 'p |';
+    }
+    100% {
+        content: ' |';
+    }
+    
+    
+
+}
+
+
+.header p::after {
+    content: '';
+    animation: change-text 10s linear infinite;
+}

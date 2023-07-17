@@ -1,0 +1,28 @@
+
+
+  @media (max-width: 767.98px) {
+    .about h5 {
+        margin-top: 20px
+    }
+
+
+    .about img {
+        margin-bottom: 15px;
+    }
+
+    .statistics {
+      height: auto;
+    }
+    .statistics .row {
+      margin: 100px 0 100px;
+    }
+
+    .protfolio .card {
+      margin: 25px 0;
+    }
+
+    .protfolio .row {
+      margin: 25px 0 !important;
+      /* padding: 0px !important; */
+    }
+  }
